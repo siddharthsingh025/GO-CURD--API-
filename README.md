@@ -1,4 +1,4 @@
-# GO-CURD--API-
+# GO-CURD--API-Instrumentation Using Opentelemetry and export to Jaeger
 
 <img width="1440" alt="Screenshot 2023-02-26 at 10 50 55 AM" src="https://user-images.githubusercontent.com/87073574/221393814-248e0793-8f05-4e7a-b871-4a3d1f79eaa2.png">
 
