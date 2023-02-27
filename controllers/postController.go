@@ -5,9 +5,19 @@ import (
 	"example/demo1/models"
 
 	"github.com/gin-gonic/gin"
+
+	"go.opentelemetry.io/otel"
+	"go.opentelemetry.io/otel/attribute"
+	oteltrace "go.opentelemetry.io/otel/trace"
 )
 
+var tracer = otel.Tracer("gin-server")
+
 func PostsCreate(c *gin.Context) {
+
+	//span
+	_, span := tracer.Start(c.Request.Context(), "PostsCreate")
+	defer span.End()
 
 	//Get data off req body
 
@@ -39,6 +49,9 @@ func PostsCreate(c *gin.Context) {
 func PostIndex(c *gin.Context) {
 	//Get the posts
 
+	_, span := tracer.Start(c.Request.Context(), "PostIndex")
+	defer span.End()
+
 	// Get all records
 	var post []models.POST
 	initializer.DB.Find(&post)
@@ -52,6 +65,9 @@ func PostIndex(c *gin.Context) {
 func PostShow(c *gin.Context) {
 	//Get id from URL
 	id := c.Param("id")
+
+	_, span := tracer.Start(c.Request.Context(), "PostShow", oteltrace.WithAttributes(attribute.String("id", id)))
+	defer span.End()
 
 	//Get the post
 
@@ -68,6 +84,9 @@ func PostShow(c *gin.Context) {
 func PostUpdate(c *gin.Context) {
 	//Get the id of URL
 	id := c.Param("id")
+
+	_, span := tracer.Start(c.Request.Context(), "PostUpdate", oteltrace.WithAttributes(attribute.String("id", id)))
+	defer span.End()
 
 	//Get the data off req body from context
 	var body struct {
@@ -94,6 +113,9 @@ func PostUpdate(c *gin.Context) {
 func PostsDelete(c *gin.Context) {
 	// GEt the id of url
 	id := c.Param("id")
+
+	_, span := tracer.Start(c.Request.Context(), "PostsDelete", oteltrace.WithAttributes(attribute.String("id", id)))
+	defer span.End()
 	//delete the particular post
 	initializer.DB.Delete(&models.POST{}, id)
 
