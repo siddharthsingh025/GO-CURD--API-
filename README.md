@@ -7,3 +7,16 @@
 
 
 <img width="1440" alt="Screenshot 2023-02-26 at 10 49 48 AM" src="https://user-images.githubusercontent.com/87073574/221393775-5bcd611e-ab4d-44fb-98a2-e76c84294a0e.png">
+
+<p align="center">
+<img width="650" alt="Screenshot 2023-02-27 at 9 41 09 PM" src="https://user-images.githubusercontent.com/87073574/221617065-5368b5fe-b4b8-4aa5-8296-2c3278b5bfc1.png">
+</p>
+
+<img width="1440" alt="Screenshot 2023-02-27 at 9 07 30 PM" src="https://user-images.githubusercontent.com/87073574/221615955-c91255f1-4f62-423d-b6c7-8dd76049104b.png">
+<img width="1440" alt="Screenshot 2023-02-27 at 9 07 35 PM" src="https://user-images.githubusercontent.com/87073574/221617825-32c2cdd8-d447-4366-9694-dbd4252599d4.png">
+
+<img width="1440" alt="Screenshot 2023-02-27 at 9 07 43 PM" src="https://user-images.githubusercontent.com/87073574/221615987-c67b18df-f65b-4324-b9d0-bf72e537c0f7.png">
+
+<p align="center">
+<img width="306" alt="Screenshot 2023-02-27 at 9 08 27 PM" src="https://user-images.githubusercontent.com/87073574/221615995-f0b47183-db83-4132-a885-72fae0c124ee.png">
+</p>
